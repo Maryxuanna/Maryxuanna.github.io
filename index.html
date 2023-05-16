@@ -8,9 +8,9 @@
   <button id="menu-toggle">&#9776; Menu</button>
   <nav id="main-nav">
     <ul>
-      <li style="font-size: x-large;text-align: center;"><a href="#überdasbuch">Über das Buch</a></li>
-      <li style="font-size: x-large;text-align: center;"><a href="#kapitelübersicht">Kapitelübersicht</a></li>
-      <li style="font-size: x-large;text-align: center;"><a href="#buchfiguren">Buchfiguren</a></li>
+      <li style="font-size: x-large;text-align: center;"><a href="#überdasbuch" onclick="closeMenu()">Über das Buch</a></li>
+      <li style="font-size: x-large;text-align: center;"><a href="#kapitelübersicht" onclick="closeMenu()">Kapitelübersicht</a></li>
+      <li style="font-size: x-large;text-align: center;"><a href="#buchfiguren" onclick="closeMenu()">Buchfiguren</a></li>
     </ul>
   </nav>
 </header>
@@ -139,7 +139,11 @@ menuToggle.addEventListener('click', function() {
     mainNav.style.display = 'none';
   }
 });
-
+  
+function closeMenu() {
+  var menu = document.getElementById('menu-nav');
+  mainNav.style.display = 'none';
+}
 </script>
 </head>
 <body>
